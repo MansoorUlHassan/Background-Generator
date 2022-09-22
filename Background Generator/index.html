@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="grad">
+    <h1 id="adjst-clr">First of all adjust colors with background by pressing adjust</h1>
+    <h1>Simple Background Generator</h1>
+    <input id="color1" oninput="gradient()" type="color" value="color" />
+    <input id="color2" oninput="gradient()" type="color" value="color2" />
+    <h2>Current CSS Background</h2>
+    <h3>background: linear-gradient(to right, green, red);</h3>
+    <div id="btn">
+        <input type="button" class="button" id="left" onclick="change('left')" value="to Left" />
+        <input type="button" class="button" id="right" onclick="change('right')" value="to Right" />
+        <input type="button" class="button" id="top" onclick="change('top')" value="to Top" />
+        <input type="button" class="button" id="bottom" onclick="change('bottom')" value="to Bottom" />
+        <input type="button" class="button" id="reset" onclick="reset()" value="Reset" />
+        <input type="button" class="button" id="adujst" onclick="change_color()" value="Adjust" />
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
